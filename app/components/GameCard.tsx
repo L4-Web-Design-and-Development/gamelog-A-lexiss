@@ -97,7 +97,7 @@ export default function GameCard() {
   ];
 
   return (
-    <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-40">
       {games.map((game) => (
         <GameCardItem key={game.id} game={game} />
       ))}
