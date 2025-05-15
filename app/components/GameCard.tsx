@@ -7,7 +7,7 @@ interface Game {
 }
 
 const GameCardItem = ({ game }: { game: Game }) => (
-  <div className="bg-white shadow-md rounded-lg overflow-hidden col-span-1">
+  <div className="bg-transparent shadow-md rounded-lg overflow-hidden col-span-1">
     <img
       src={game.image}
       alt={game.title}
@@ -33,9 +33,9 @@ export default function GameCard() {
   const games = [
     {
       id: 1,
-      title: "Game Title 1",
-      genre: "Genre 1",
-      creationDate: "2023-01-01",
+      title: "The Witcher 3: Wild Hunt",
+      genre: "Action RPG",
+      creationDate: "2015-05-19",
       image: "app/assets/svg/thewitcher.svg",
     },
     {
@@ -97,7 +97,7 @@ export default function GameCard() {
   ];
 
   return (
-    <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {games.map((game) => (
         <GameCardItem key={game.id} game={game} />
       ))}
