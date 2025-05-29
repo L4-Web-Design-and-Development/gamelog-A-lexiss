@@ -24,7 +24,7 @@ const GameCard = ({
 
       <div className="flex justify-end mt-4 space-x-2">
         <div className="flex flex-col space-y-2">
-          <button className="px-2 py-1 text-xs bg-cyan-600 text-white rounded-md hover:bg-cyan-700 transition">
+          <button className="px-2 py-1 text-xs border border-cyan-600 text-cyan-600 bg-transparent rounded-md hover:bg-cyan-50 transition">
             Edit
           </button>
           <Form method="post">
@@ -32,7 +32,7 @@ const GameCard = ({
             <input type="hidden" name="gameId" value={id} />
             <button
               type="submit"
-              className="px-2 py-1 text-xs bg-pink-600 text-white rounded-md hover:bg-pink-700 transition"
+              className="px-2 py-1 text-xs border border-pink-600 text-pink-600 bg-transparent rounded-md hover:bg-cyan-50 transition"
             >
               Delete
             </button>
