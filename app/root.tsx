@@ -7,6 +7,8 @@ import {
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 import stylesheet from "~/tailwind.css?url";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -24,7 +26,9 @@ export default function App() {
       <body>
         <div className="flex flex-col min-h-screen bg-gray-950 text-gray-50">
           <div className="flex-1">
+            <Navbar />
             <Outlet />
+            <Footer />
           </div>
           <ScrollRestoration />
           <Scripts />
