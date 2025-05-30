@@ -3,7 +3,7 @@ import siteLogo from "~/assets/svg/gamelog-logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#080E10] border-t border-cyan-500 px-6 py-8 text-white">
+    <footer className="border-t border-cyan-500 px-6 py-8 text-white">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
         {/* Logo */}
         <div>
